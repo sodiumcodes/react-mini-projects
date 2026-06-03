@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+body {
+  @apply bg-blue-950 min-h-screen text-white;
+}
+
+#root {
+  @apply max-w-3xl mx-auto px-6 py-10;
+}
+
+h1 {
+  @apply text-6xl font-bold text-center mb-8 text-blue-500;
+}
+
+ul {
+  @apply flex flex-col gap-4 mt-8 ;
+}

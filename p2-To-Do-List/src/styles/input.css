@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+.input-container {
+  @apply bg-slate-800 p-6 rounded-xl shadow-lg flex flex-col gap-4;
+}
+
+.input-container label {
+  @apply text-sm font-medium text-slate-200;
+}
+
+.input-container select,
+.input-container input {
+  @apply w-full p-3 rounded-lg bg-slate-700 border border-slate-600 text-white outline-none focus:border-cyan-400;
+}
+
+.input-container button {
+  @apply bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 rounded-lg transition-all duration-200;
+}
