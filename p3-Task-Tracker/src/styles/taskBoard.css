@@ -1,0 +1,31 @@
+@reference "tailwindcss";
+
+.task-card {
+  @apply border border-slate-700 rounded-2xl p-5 mb-5 shadow-xl hover:scale-[1.02] transition-all duration-300;
+  background-color: rgba(15, 23, 42, 0.7);
+}
+
+.task-content {
+  @apply flex flex-col gap-4;
+}
+
+.task-priority {
+  @apply w-fit px-4 py-1 rounded-full text-sm font-bold;
+}
+
+.priority-Urgent {
+  @apply text-red-400 bg-red-500/20;
+}
+.priority-Important {
+  @apply text-orange-400 bg-orange-500/20;
+}
+.priority-Medium {
+  @apply text-blue-400 bg-blue-500/20;
+}
+.priority-Low {
+  @apply text-green-400 bg-green-500/20;
+}
+
+.task-name {
+  @apply text-xl font-semibold break-words;
+}

@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+body {
+  @apply min-h-screen text-white;
+  background: linear-gradient(
+    135deg,
+    rgb(15, 23, 42),
+    rgb(30, 41, 59),
+    rgb(0, 0, 0)
+  );
+}
+
+h1 {
+  @apply text-5xl font-extrabold text-center py-8;
+}
+
+.board-container {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-8 px-8 pb-10;
+}
+
+.board-section {
+  @apply border border-slate-700 rounded-3xl p-6 shadow-2xl;
+  background-color: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(10px);
+}
+
+.board-title {
+  @apply text-3xl font-bold text-center mb-6;
+}

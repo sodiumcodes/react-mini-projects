@@ -1,0 +1,23 @@
+@reference "tailwindcss";
+
+.input-container {
+  @apply max-w-2xl mx-auto border border-slate-700 rounded-3xl p-8 mb-10 shadow-2xl flex flex-col gap-4;
+  background-color: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(10px);
+}
+
+.input-container label {
+  @apply text-lg font-semibold text-cyan-300;
+}
+
+.input-container select {
+  @apply bg-slate-900 text-white border border-cyan-500 rounded-xl p-3 outline-none;
+}
+
+.input-container input {
+  @apply bg-slate-900 text-white border border-purple-500 rounded-xl p-3 outline-none;
+}
+
+.input-container button {
+  @apply mt-3 bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-bold py-3 rounded-xl shadow-lg hover:scale-105 transition-all duration-300;
+}

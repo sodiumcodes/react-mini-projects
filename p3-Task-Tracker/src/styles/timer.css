@@ -1,0 +1,43 @@
+@reference "tailwindcss";
+
+.timer-container {
+  @apply flex flex-col
+  items-center
+  gap-5
+  bg-slate-800/70
+  rounded-2xl
+  p-5
+  border border-cyan-600;
+}
+
+.timer-display {
+  @apply text-4xl
+  md:text-5xl
+  font-mono
+  font-bold
+  text-cyan-400;
+}
+
+.timer-buttons {
+  @apply flex gap-3 flex-wrap;
+}
+
+.timer-buttons button {
+  @apply px-4 py-2
+  rounded-xl
+  font-semibold
+  transition-all
+  duration-300;
+}
+
+.start-btn {
+  @apply bg-green-600 hover:bg-green-700;
+}
+
+.stop-btn {
+  @apply bg-yellow-600 hover:bg-yellow-700;
+}
+
+.reset-btn {
+  @apply bg-red-600 hover:bg-red-700;
+}
