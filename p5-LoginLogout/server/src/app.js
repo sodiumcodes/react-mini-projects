@@ -4,6 +4,11 @@ import cookieParser from 'cookie-parser';
 
 const app = express();
 
+const allowedOrigins = [
+    "http://localhost:5173/"
+]
+app.cors(allowedOrigins);
+
 app.use(express.json({limit: "32kb"}));
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan("dev")); // logs requests
